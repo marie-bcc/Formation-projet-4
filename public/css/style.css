@@ -1,3 +1,179 @@
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 28px;
+  margin-left: 20px;
+}
+
+.section-explorer h2 {
+  padding-top: 40px;
+}
+
+.section-explorer p {
+  font-size: 1.1em;
+  text-align: center;
+  margin: auto;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.section-localisation p {
+  margin-left: 17px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .header-img {
+  width: 162px;
+  height: 44px;
+  margin: 14px 105px 5px 108px;
+}
+
+section {
+  width: 100%;
+}
+
+.section-explorer {
+  height: 259px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column;
+  background-color: #F3F3F3;
+  gap: 20px;
+}
+.section-explorer h2 {
+  text-align: center;
+}
+
+.section-localisation {
+  height: 50px;
+  color: #353535;
+  font-weight: 500;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-fonctionnement {
+  width: 100%;
+  height: 440px;
+  background-color: #FFFFFF;
+}
+.section-fonctionnement h2 {
+  margin-bottom: 26px;
+  padding-top: 48px;
+}
+.section-fonctionnement .section-fonctionnement-liste {
+  padding-left: 32.5px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-fonctionnement .section-fonctionnement-liste .section-fonctionnement-liste__item {
+  width: 322.49px;
+  height: 72.38px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  border-radius: 25px;
+  margin: 0px 0 25px 0;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.section-fonctionnement .section-fonctionnement-liste .section-fonctionnement-liste__item .section-fonctionnement-liste__item-icone {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: #F3F3F3;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  top: 2px;
+  left: -10px;
+}
+
+.section-restaurant {
+  width: 100%;
+  height: 100%;
+  background: #F3F3F3;
+  padding-bottom: 66px;
+}
+.section-restaurant h2 {
+  padding-top: 54px;
+}
+.section-restaurant .section-restaurant-liste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-restaurant .section-restaurant-liste__item {
+  width: 340px;
+  height: 251px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.section-restaurant .section-restaurant-liste__item .section-restaurant-liste__img {
+  width: 100%;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.section-restaurant .section-restaurant-liste__item .section-restaurant-liste-item-txt-titre {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #353535;
+  margin: 16px 0px 0px 13px;
+  padding: 0;
+}
+.section-restaurant .section-restaurant-liste__item .section-restaurant-liste-item-txt-adresse {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #353535;
+  margin: 0px 0px 0px 13px;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+  color: #FFFFFF;
+  margin: 0;
+}
+footer h4 {
+  margin: 0 0 0 40px;
+  padding-top: 22px;
+}
+footer ul {
+  list-style-type: none;
+  padding-bottom: 22px;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .btn {
   height: 50px;
   width: 218px;
@@ -8,99 +184,10 @@
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   border: none;
 }
-.btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-}
-
-.section-fonctionnement {
-  padding-left: 32.5px;
-  padding-right: 20px;
-}
-.section-fonctionnement .section-fonctionnement__item {
-  width: 322.49px;
-  height: 72.38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 25px;
-  margin-bottom: 25px;
-}
-.section-fonctionnement .section-fonctionnement__item div {
-  width: 24px;
-  height: 24px;
-  background-color: #9356DC;
-  color: #F3F3F3;
-  border-radius: 50%;
-  text-align: center;
-  position: absolute;
-  left: 20px;
-}
-
-body {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 1.5em;
-  line-height: 28px;
-  margin-left: 20px;
-}
-
-.section-explorer h2 {
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 40px;
-}
-
-.section-explorer p {
-  font-size: 1.1em;
-  text-align: center;
-  margin: auto;
-}
-
-.section-localisation p {
-  margin-left: 17px;
-}
-
-.section-explorer {
-  width: auto;
-  height: 259px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #F3F3F3;
-  gap: 20px;
-}
-
-.section-localisation {
-  width: 100%;
-  height: 50px;
-  color: #353535;
+.btn p {
   font-weight: 500;
-  background-color: #EAEAEA;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header header img {
-  width: 162px;
-  height: 44px;
-  margin: 14px 105px 5px 108px;
+  line-height: 19px;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

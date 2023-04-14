@@ -10,7 +10,8 @@ body{
 
 }
 
-h2 {
+h2{
+    font-style: normal;
     font-weight: 700;
     font-size: map-get($map: $font-size, $key: titre-section);
     line-height: 28px;
@@ -18,8 +19,6 @@ h2 {
 }
 
 .section-explorer h2{
-    font-size: map-get($map: $font-size, $key: titre-section );
-    text-align: center;
     padding-top: 40px;
 }
 
@@ -27,6 +26,8 @@ h2 {
     font-size: map-get($map: $font-size, $key: sous-titre ); 
     text-align: center;
     margin: auto;
+    font-weight: 300;
+    line-height: 21px;
     
 }
 

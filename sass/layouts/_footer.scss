@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: $background-footer;
+    color: $color-txt-footer;
+    margin: 0;
+    h4{
+        margin: 0 0 0 40px;
+        padding-top: 22px;
+        
+    }
+    ul{
+        list-style-type: none;
+        padding-bottom: 22px;
+        
+    }
+     a{
+        color: $color-lien-footer;
+        text-decoration: none;
+        
+    }
+}

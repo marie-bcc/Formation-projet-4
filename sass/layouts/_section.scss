@@ -1,21 +1,20 @@
-$color-background-primary: #F3F3F3;
-$color-background-secondary: #F7F7F7;
-$color-background-tertiary: #EAEAEA;
-$color-txt : #353535;
-
+section{
+    width: 100%;
+}
 
 .section-explorer{
-    width: auto;
     height: 259px;
    @include flexMidCol;
     flex-direction: column;
     background-color: $color-background-primary;
     gap: 20px;
+
+    h2{
+        text-align: center;
+    }
 }
 
 .section-localisation{
-    
-        width: 100%;
         height: 50px;
         color: $color-txt;
         font-weight: 500;
@@ -23,3 +22,101 @@ $color-txt : #353535;
         @include flexMid;
     
     }
+
+    
+
+.section-fonctionnement{
+    
+    width: 100%;
+    height: 440px;
+    background-color: $color-background-secondary;
+    
+
+    h2{
+        margin-bottom: 26px;
+        padding-top: 48px;
+    }
+
+
+    .section-fonctionnement-liste{
+        padding-left: 32.5px;
+        padding-right: 20px;
+        @include flexMidCol;
+        
+        .section-fonctionnement-liste__item{
+            width: 322.49px;
+            height: 72.38px;
+           display: flex;
+           align-items: center;
+           justify-content: start;
+            gap: 20px;
+            border-radius: 25px;
+            margin: 0px 0 25px 0; 
+            box-shadow: $box-shadow;
+        
+            .section-fonctionnement-liste__item-icone {
+                width: 24px;
+                height: 24px; 
+                background-color: $color-icones;
+                color: $color-icones-txt;
+                border-radius: 50%;
+                text-align: center;
+                @include position 
+            }
+
+            
+        
+            
+        }
+    }
+
+}
+
+.section-restaurant{
+    width: 100%;
+    height: 100%;
+    background: $color-background-primary;
+    padding-bottom: 66px;
+
+    h2{
+        padding-top: 54px
+    }
+
+    .section-restaurant-liste{
+        @include flexMidCol; 
+    }
+
+    .section-restaurant-liste__item{
+        width: 340px;
+        height: 251px; 
+        background-color:  #FFFFFF;
+        border-radius: 15px;
+        margin-bottom: 18px;
+        box-shadow: $box-shadow;
+        
+
+        .section-restaurant-liste__img{
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        .section-restaurant-liste-item-txt-titre{
+            font-size: map-get($map: $font-size, $key: nom-restaurant );
+            font-weight: 700;
+            color: $color-txt;
+            margin: 16px 0px 0px 13px; ;
+            padding: 0;
+        }
+
+        .section-restaurant-liste-item-txt-adresse{
+            font-size: map-get($map: $font-size, $key: sous-titre );
+            font-weight: 300;
+            color: $color-txt;
+            margin: 0px 0px 0px 13px;
+            padding: 0;
+        }
+
+    }
+}

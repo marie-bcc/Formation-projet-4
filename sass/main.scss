@@ -1,11 +1,12 @@
-@import "./Base/typographie";
+
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./Base/typographie"; 
 @import "./layouts/header"; 
 @import "./layouts/section";
 @import "./layouts/footer"; 
 @import "./composants/boutons.scss"; 
 @import "./composants/liste.scss"; 
-@import "./composants/liens.scss"; 
+ 
 
 
