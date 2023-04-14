@@ -1,0 +1,19 @@
+@mixin flexMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexMidCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin position ($x: 50%, $y:50%){
+    position: absolute;
+    top: $y;
+    left: $x;
+    transform: translate(-$x, -$y);
+}

@@ -1,0 +1,37 @@
+
+$font-size: (titre-section: 1.5em, sous-titre: 1.1em, bouton: 1em, nom-restaurant: 1.1em, lien-footer: 1em, titre-footer: 1.1em); 
+
+body{
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5; 
+    margin: 0;
+    padding: 0;
+
+}
+
+h2 {
+    font-weight: 700;
+    font-size: map-get($map: $font-size, $key: titre-section);
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+.section-explorer h2{
+    font-size: map-get($map: $font-size, $key: titre-section );
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section-explorer p{
+    font-size: map-get($map: $font-size, $key: sous-titre ); 
+    text-align: center;
+    margin: auto;
+    
+}
+
+.section-localisation p{
+    margin-left: 17px ;
+}
+
+

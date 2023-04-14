@@ -1,0 +1,36 @@
+$color-icones: #9356DC;
+$color-icones-txt: #F3F3F3; 
+
+@mixin flexMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-fonctionnement{
+    padding-left: 32.5px;
+    padding-right: 20px;
+    .section-fonctionnement__item{
+        width: 322.49px;
+        height: 72.38px;
+       @include flexMid;
+        gap: 20px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 25px;
+        margin-bottom: 25px;
+    
+        div {
+            width: 24px;
+            height: 24px; 
+            background-color: $color-icones;
+            color: $color-icones-txt;
+            border-radius: 50%;
+            text-align: center;
+            position: absolute;
+            left: 20px;
+        }
+    
+        
+    }
+}
+

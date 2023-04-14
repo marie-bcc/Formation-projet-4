@@ -1,0 +1,106 @@
+.btn {
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  margin-bottom: 70px;
+  color: #EAEAEA;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  border: none;
+}
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+}
+
+.section-fonctionnement {
+  padding-left: 32.5px;
+  padding-right: 20px;
+}
+.section-fonctionnement .section-fonctionnement__item {
+  width: 322.49px;
+  height: 72.38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+.section-fonctionnement .section-fonctionnement__item div {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: #F3F3F3;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 20px;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 28px;
+  margin-left: 20px;
+}
+
+.section-explorer h2 {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.section-explorer p {
+  font-size: 1.1em;
+  text-align: center;
+  margin: auto;
+}
+
+.section-localisation p {
+  margin-left: 17px;
+}
+
+.section-explorer {
+  width: auto;
+  height: 259px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+  gap: 20px;
+}
+
+.section-localisation {
+  width: 100%;
+  height: 50px;
+  color: #353535;
+  font-weight: 500;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header header img {
+  width: 162px;
+  height: 44px;
+  margin: 14px 105px 5px 108px;
+}
+
+/*# sourceMappingURL=style.css.map */
