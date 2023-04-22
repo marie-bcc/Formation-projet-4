@@ -48,7 +48,8 @@
 
 .icone-favoris {
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -78,14 +79,14 @@
         width: 80px;
         height: 29px;
         text-align: center;
-        background-color: #99E2D0;
+        background-color: $color-nouveau;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 2px;
 
         .new{
             font-size: 14px;
             line-height: 16px;
-            color: #008766;
+            color: $color-nouveau-txt; 
             font-weight: 500;
             
         }
