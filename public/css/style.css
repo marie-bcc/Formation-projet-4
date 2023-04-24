@@ -169,10 +169,93 @@ footer h4 {
 footer ul {
   list-style-type: none;
   padding-bottom: 22px;
+  margin: 0;
 }
 footer a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.section-menu h2 {
+  margin-top: 32px;
+  font-family: "Shrikhand";
+  font-size: 1.7em;
+}
+
+.section-menu h3 {
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  text-transform: uppercase;
+  margin-left: 13px;
+}
+
+.section-menu h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 0px;
+  padding-top: 13px;
+}
+
+.section-menu p {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 15.04px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.img-menu {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.section-menu {
+  position: relative;
+}
+.section-menu .section-menu-contenu {
+  width: 100%;
+  background-color: #F3F3F3;
+  border-radius: 50px 50px 0% 0%;
+  position: absolute;
+  top: 183px;
+}
+.section-menu .section-menu-contenu .section-menu-contenu-txt {
+  width: auto;
+  height: 69px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  padding-left: 15px;
+  padding-right: 13.5px;
+  margin: 13px;
+}
+.section-menu .section-menu-contenu .section-menu-contenu-txt__prix {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-menu .section-menu-contenu .section-menu-contenu-txt__prix span {
+  font-weight: 700;
+}
+.section-menu .btn-commander {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.section-menu .btn-commander .btn-menu {
+  margin: auto;
+  width: 186px;
+}
+.section-menu .btn-commander .btn-menu span {
+  font-size: 16px;
+}
+
+footer {
+  position: relative;
 }
 
 .btn {
@@ -254,6 +337,110 @@ footer a {
   line-height: 16px;
   color: #008766;
   font-weight: 500;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #F3F3F3;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
