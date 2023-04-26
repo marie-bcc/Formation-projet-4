@@ -30,16 +30,11 @@ h2 {
   margin-left: 17px;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-header .header-img {
-  width: 162px;
-  height: 44px;
-  margin: 14px 105px 5px 108px;
+header h1 {
+  font-family: "Shrikhand";
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 5px;
 }
 
 section {
@@ -176,36 +171,10 @@ footer a {
   text-decoration: none;
 }
 
-.section-menu h2 {
-  margin-top: 32px;
-  font-family: "Shrikhand";
-  font-size: 1.7em;
+.section-img {
+  height: 200px;
 }
-
-.section-menu h3 {
-  font-weight: 300;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
-  text-transform: uppercase;
-  margin-left: 13px;
-}
-
-.section-menu h4 {
-  font-weight: 500;
-  font-size: 1.1em;
-  margin: 0px;
-  padding-top: 13px;
-}
-
-.section-menu p {
-  margin: 0px;
-  font-weight: 300;
-  font-size: 15.04px;
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.img-menu {
+.section-img .img-menu {
   width: 100%;
   height: 275px;
   object-fit: cover;
@@ -213,38 +182,114 @@ footer a {
 
 .section-menu {
   position: relative;
+  z-index: 1;
+}
+.section-menu h2 {
+  padding-top: 32px;
+  font-family: "Shrikhand";
+  font-size: 1.7em;
+}
+.section-menu h3 {
+  font-weight: 300;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  text-transform: uppercase;
+  margin-left: 13px;
+}
+.section-menu h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 0px;
+  padding-top: 13px;
+}
+.section-menu p {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 15.04px;
 }
 .section-menu .section-menu-contenu {
   width: 100%;
   background-color: #F3F3F3;
   border-radius: 50px 50px 0% 0%;
-  position: absolute;
-  top: 183px;
 }
-.section-menu .section-menu-contenu .section-menu-contenu-txt {
+.section-menu .section-menu-contenu-txt {
   width: auto;
   height: 69px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
-  padding-left: 15px;
-  padding-right: 13.5px;
   margin: 13px;
-}
-.section-menu .section-menu-contenu .section-menu-contenu-txt__prix {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
-.section-menu .section-menu-contenu .section-menu-contenu-txt__prix span {
+.section-menu .section-menu-contenu-txt__plat {
+  width: auto;
+  flex-grow: 1;
+  transition: all 0.3s ease-in-out;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.section-menu .section-menu-contenu-txt__plat h4 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 0;
+}
+.section-menu .section-menu-contenu-txt__plat p {
+  padding-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section-menu .div-principal {
+  position: relative;
+  height: 69px;
+  padding: 10px;
+  transition: margin-right 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.section-menu .div-principal p {
+  margin: 0;
   font-weight: 700;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.section-menu .section-menu-contenu-txt:hover .div-principal {
+  margin-right: 59px;
+}
+.section-menu .div-secondaire {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 59px;
+  height: 69px;
+  background-color: #99E2D0;
+  transform: translateX(80px);
+  transition: transform 0.3s ease-in-out;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+.section-menu .section-menu-contenu-txt:hover .div-secondaire {
+  transform: translateX(0);
 }
 .section-menu .btn-commander {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .section-menu .btn-commander .btn-menu {
   margin: auto;
@@ -253,8 +298,7 @@ footer a {
 .section-menu .btn-commander .btn-menu span {
   font-size: 16px;
 }
-
-footer {
+.section-menu footer {
   position: relative;
 }
 
@@ -289,7 +333,7 @@ footer {
 .icone-non-favoris,
 .icone-favoris {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   right: 1.5rem;
   top: 50%;

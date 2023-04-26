@@ -38,7 +38,7 @@
 .icone-non-favoris,
 .icone-favoris {
     display: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     right: 1.5rem;
     top: 50%;
@@ -47,12 +47,12 @@
 
 .icone-non-favoris {
     color: black;
+   
+    
 }
 
 .icone-favoris {
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-
-    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -63,10 +63,12 @@
 
 .favoris-checkbox:not(:checked)~.icone .icone-non-favoris {
     display: inline;
+    
 }
 
 .favoris-checkbox:checked~.icone .icone-favoris {
     display: inline;
+    
 }
 
 

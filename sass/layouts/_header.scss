@@ -1,11 +1,10 @@
 header{
-    @include flexMid;
-    flex-direction: column;
-    
-    .header-img{
-        width: 162px; 
-        height: 44px;
-        margin: 14px 105px  5px 108px; 
-        
+    h1{
+        font-family: 'Shrikhand';
+        text-align: center;
+        margin-top: 14px;
+        margin-bottom: 5px;
     }
+    
+    
 }
