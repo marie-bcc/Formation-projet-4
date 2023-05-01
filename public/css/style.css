@@ -30,15 +30,27 @@ h2 {
   margin-left: 17px;
 }
 
+header {
+  position: relative;
+}
 header h1 {
   font-family: "Shrikhand";
   text-align: center;
   margin-top: 14px;
   margin-bottom: 5px;
 }
+header a {
+  position: absolute;
+  left: 5%;
+  right: 22.67%;
+  top: 23.33%;
+  bottom: 23.33%;
+  color: black;
+}
 
 /* styles.css */
 .loader-container {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +71,55 @@ header h1 {
   background-color: #9356dc;
   transform-origin: center;
   animation: myAnim 3s ease-in-out 1s 1 normal forwards;
+}
+.loader .cup {
+  position: relative;
+  width: 120px;
+  height: 100px;
+}
+.loader .cup-body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FF79DA;
+  border-radius: 0% 0% 45% 51%/29% 47% 53% 44%;
+  box-shadow: inset 0 0 0 10px #9356dc;
+  overflow: hidden;
+}
+.loader .cup-handle {
+  position: absolute;
+  top: 30%;
+  right: -25%;
+  width: 40px;
+  height: 20px;
+  background-color: #9356dc;
+  border-radius: 30% 30% 50% 50%/100% 100% 100% 100%;
+  transform: rotate(-20deg);
+}
+.loader .liquid {
+  position: absolute;
+  bottom: 7px;
+  margin: auto;
+  left: 10px;
+  width: 85%;
+  height: 60%;
+  background-color: rgba(146, 86, 220, 0.8980392157);
+  border-radius: 0% 0% 45% 51%/29% 47% 53% 44%;
+  animation: liquid-animation 3s ease-in-out infinite;
+}
+.loader .liquid h1 {
+  font-size: 18px;
+  font-family: "Shrikhand";
+  color: #FFFFFF;
+  text-align: center;
+}
+@keyframes liquid-animation {
+  0%, 100% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(-2px) rotate(1deg);
+  }
 }
 
 @keyframes myAnim {
@@ -113,7 +174,6 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-direction: column;
   background-color: #F3F3F3;
   gap: 20px;
 }
@@ -136,9 +196,19 @@ section {
   height: 440px;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 990px) {
+  .section-fonctionnement {
+    height: 228px;
+  }
+}
 .section-fonctionnement h2 {
   margin-bottom: 26px;
   padding-top: 48px;
+}
+@media screen and (min-width: 990px) {
+  .section-fonctionnement h2 {
+    margin-left: 200px;
+  }
 }
 .section-fonctionnement .section-fonctionnement-liste {
   padding-left: 32.5px;
@@ -148,8 +218,14 @@ section {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 990px) {
+  .section-fonctionnement .section-fonctionnement-liste {
+    flex-direction: row;
+  }
+}
 .section-fonctionnement .section-fonctionnement-liste .section-fonctionnement-liste__item {
   width: 322.49px;
+  min-width: 322.49px;
   height: 72.38px;
   display: flex;
   align-items: center;
@@ -158,6 +234,11 @@ section {
   border-radius: 25px;
   margin: 0px 0 25px 0;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1100px) {
+  .section-fonctionnement .section-fonctionnement-liste .section-fonctionnement-liste__item {
+    margin-left: 36px;
+  }
 }
 .section-fonctionnement .section-fonctionnement-liste .section-fonctionnement-liste__item .section-fonctionnement-liste__item-icone {
   width: 24px;
@@ -180,20 +261,38 @@ section {
 .section-restaurant h2 {
   padding-top: 54px;
 }
+@media screen and (min-width: 990px) {
+  .section-restaurant h2 {
+    margin-left: 150px;
+  }
+}
 .section-restaurant .section-restaurant-liste {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+@media screen and (min-width: 1000px) {
+  .section-restaurant .section-restaurant-liste {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .section-restaurant .section-restaurant-liste__item {
-  width: 340px;
+  width: 90%;
+  max-width: 490px;
   height: 251px;
   background-color: #FFFFFF;
   border-radius: 15px;
   margin-bottom: 18px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   text-decoration: none;
+}
+@media screen and (min-width: 1000px) {
+  .section-restaurant .section-restaurant-liste__item {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 .section-restaurant .section-restaurant-liste__item .section-restaurant-liste__img {
   width: 100%;
@@ -223,6 +322,14 @@ footer {
   background-color: #353535;
   color: #FFFFFF;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
 footer h4 {
   font-family: "Shrikhand";
@@ -318,6 +425,7 @@ footer .espace {
 .section-menu .menu-titre {
   width: 90%;
   max-width: 634px;
+  position: relative;
 }
 .section-menu .menu-sous-titre {
   width: 90%;
@@ -433,7 +541,7 @@ footer .espace {
 }
 .section-menu .icone-menu {
   position: absolute;
-  left: 350px;
+  left: 100%;
   top: 47px;
 }
 .section-menu footer {
@@ -457,10 +565,6 @@ footer .espace {
 }
 .btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-}
-
-.section-restaurant-liste-description {
-  position: relative;
 }
 
 .favoris-label {
@@ -519,110 +623,6 @@ footer .espace {
   line-height: 16px;
   color: #008766;
   font-weight: 500;
-}
-
-.lds-roller {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-
-.lds-roller div {
-  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  transform-origin: 40px 40px;
-}
-
-.lds-roller div:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #F3F3F3;
-  margin: -4px 0 0 -4px;
-}
-
-.lds-roller div:nth-child(1) {
-  animation-delay: -0.036s;
-}
-
-.lds-roller div:nth-child(1):after {
-  top: 63px;
-  left: 63px;
-}
-
-.lds-roller div:nth-child(2) {
-  animation-delay: -0.072s;
-}
-
-.lds-roller div:nth-child(2):after {
-  top: 68px;
-  left: 56px;
-}
-
-.lds-roller div:nth-child(3) {
-  animation-delay: -0.108s;
-}
-
-.lds-roller div:nth-child(3):after {
-  top: 71px;
-  left: 48px;
-}
-
-.lds-roller div:nth-child(4) {
-  animation-delay: -0.144s;
-}
-
-.lds-roller div:nth-child(4):after {
-  top: 72px;
-  left: 40px;
-}
-
-.lds-roller div:nth-child(5) {
-  animation-delay: -0.18s;
-}
-
-.lds-roller div:nth-child(5):after {
-  top: 71px;
-  left: 32px;
-}
-
-.lds-roller div:nth-child(6) {
-  animation-delay: -0.216s;
-}
-
-.lds-roller div:nth-child(6):after {
-  top: 68px;
-  left: 24px;
-}
-
-.lds-roller div:nth-child(7) {
-  animation-delay: -0.252s;
-}
-
-.lds-roller div:nth-child(7):after {
-  top: 63px;
-  left: 17px;
-}
-
-.lds-roller div:nth-child(8) {
-  animation-delay: -0.288s;
-}
-
-.lds-roller div:nth-child(8):after {
-  top: 56px;
-  left: 12px;
-}
-
-@keyframes lds-roller {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

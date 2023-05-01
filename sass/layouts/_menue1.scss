@@ -44,6 +44,7 @@
         
         width: 90%;
         max-width: 634px;
+        position: relative;
        
         
     }
@@ -196,7 +197,7 @@
 
     .icone-menu{
         position: absolute;
-        left: 350px;
+        left: 100%;
         top: 47px;
        
     }
