@@ -228,6 +228,11 @@ section {
     .section-restaurant-liste {
         @include flexMidCol;
 
+
+        @media screen and (min-width: 1775px){
+            margin: 100px;
+        }
+
         @media screen and (min-width: 1000px) {
             flex-direction: row;
             flex-wrap: wrap;
