@@ -27,46 +27,43 @@
 
 
 
-.favoris-label {
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.icone-non-favoris,
-.icone-favoris {
-    display: none;
-    font-size: 1.5rem;
-    position: absolute;
-    right: 1.5rem;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.icone-non-favoris {
-    color: black;
-   
-    
-}
-
-.icone-favoris {
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .favoris-checkbox {
     display: none;
 }
 
-.favoris-checkbox:not(:checked)~.icone .icone-non-favoris {
-    display: inline;
-    
+.fas, .far {
+    font-size: 1.5rem;
+    right: 1.5rem;
+    top: 80%;
+    transform: translateY(-50%);
+    position: absolute;
+    transition: opacity 0.3s ease-in-out; 
 }
 
-.favoris-checkbox:checked~.icone .icone-favoris {
-    display: inline;
-    
+
+/* Couleur du coeur plein */
+.fas {
+    opacity: 0;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
+
+
+/* Couleur du coeur vide */
+.far {
+    color: black; 
+}
+
+.favoris-checkbox:checked ~ .fas {
+    opacity: 1;
+}
+
+.favoris-checkbox:checked ~ .far {
+    opacity: 0;
+}
+
+
 
 
 .section-restaurant-liste__item {
