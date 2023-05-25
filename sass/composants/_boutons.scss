@@ -44,7 +44,7 @@
 /* Couleur du coeur plein */
 .fas {
     opacity: 0;
-    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: $background-bouton-hover; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 }
