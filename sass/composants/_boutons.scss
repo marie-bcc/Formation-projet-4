@@ -38,17 +38,31 @@
 
 
 
+.section-restaurant-liste__item {
+    position: relative;
+    /* autres styles... */
+}
+
 .favoris-checkbox {
     display: none;
 }
 
-.fas, .far {
-    font-size: 1.5rem;
-    
-    transform: translateY(-50%);
+.heart-label {
     position: absolute;
+    top: 70%; /* ajuster comme nécessaire */
+    right: 5%; /* ajuster comme nécessaire */
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fas, .far {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
     transition: opacity 0.3s ease-in-out; 
 }
+
 
 
 /* Couleur du coeur plein */

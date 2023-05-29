@@ -125,21 +125,15 @@
         }
     }
 
-    .toggle-container {
+   
+      
+    .price-check {
         position: relative;
-      }
-      
-      .toggle-animation {
-        display: none;
-      }
-      
-      .section-menu-contenu-txt__plat {
-        /* Styles pour le contenu du plat */
-      }
-      
-      .div-principal {
+        display: flex;
+    }
+    
+    .div-principal {
         /* Styles pour la div principale */
-        position: relative;
         height: 69px;
         padding: 10px;
         transition: margin-right 0.3s ease-in-out;
@@ -147,20 +141,20 @@
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-      }
-      
-      .div-principal p {
+    }
+    
+    .div-principal p {
         margin: 0;
         font-weight: 700;
         margin-right: 10px;
         font-size: 15px;
-      }
-      
-      .toggle-animation:checked ~ .div-principal {
+    }
+    
+    .price-check:hover .div-principal {
         margin-right: $largeur-div-secondaire; /* Remplacez la valeur par celle de $largeur-div-secondaire */
-      }
-      
-      .div-secondaire {
+    }
+    
+    .div-secondaire {
         /* Styles pour la div secondaire */
         position: absolute;
         right: 0;
@@ -176,12 +170,11 @@
         align-items: center;
         color: #ffffff;
         font-size: 1.5em;
-      }
-      
-      .toggle-animation:checked ~ .div-secondaire {
+    }
+    
+    .price-check:hover .div-secondaire {
         transform: translateX(0);
-      }
-      
+    }
 
     .btn-commander {
         width: 100%;
@@ -238,21 +231,20 @@
     .section-menu-contenu-txt:nth-of-type(9) {
         animation-delay: 2.1s;
     }
+    .section-menu-contenu-txt:nth-of-type(10) {
+        animation-delay: 2.3s;
+    }
 
     
 
-    // .heart-menu{
-    //     position: absolute;
-    //     top: 63%;
-    //     left: 25em;
-    // }
-
-    .icone-menu {
+    .heart-menu{
         position: absolute;
-        left: 100%;
-        top: 47px;
-
+        top: 75%;
+        left: 90%;
+        font-size: 1.3rem;
     }
+
+   
 
     footer {
         position: relative;
