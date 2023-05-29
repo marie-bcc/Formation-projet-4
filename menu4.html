@@ -5,40 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Shrikhand&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&amp;family=Shrikhand&ampdisplay=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="public/css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
         rel="stylesheet">
-    <title>À la française
 
+    <title>À la française
     </title>
 </head>
 
 <body>
-    <div class="loader-container">
-        <div class="loader">
-            <div class="cup">
-                <div class="cup-body">
-                    <div class="liquid">
-                        <h1>Ohmyfood</h1>
-                    </div>
-                </div>
-                <div class="cup-handle"></div>
-            </div>
-        </div>
 
-        
-    </div>
     <header>
         <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
         <h1>Ohmyfood</h1>
@@ -48,8 +36,8 @@
     <main>
         <section>
             <div class="section-img">
-                <img src="public/ImagesettextesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt="" class="img-menu">
+                <img src="public/ImagesettextesOhmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt=""
+                    class="img-menu">
             </div>
         </section>
         <section class="section-menu">
@@ -57,175 +45,171 @@
                 <div class="menu-titre">
                     <h2>À la française
                     </h2>
-                    <label class="favoris">
+                    <label>
                         <input type="checkbox" class="favoris-checkbox">
-
-                        <span class="icone icone-menu">
-                            <span class="icone-non-favoris"><i class="fa-regular fa-heart"></i></span>
-                            <span class="icone-favoris"><i class="fa-solid fa-heart"></i></span>
-                        </span>
-
+                        <i class="far fa-heart heart-menu"></i> <!-- Coeur vide -->
+                        <i class="fas fa-heart heart-menu"></i> <!-- Coeur plein -->
                     </label>
                 </div>
-
-
-
                 <div class="menu-sous-titre">
                     <h3>Entrées</h3>
                 </div>
-                <label for="toggle-animation" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation" class="toggle-animation" />
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
                         <h4>Tartare de poulpe acidulé</h4>
-                        <p> Aux zestes d'orange</p>
+                        <p>Aux zestes d'orange </p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>25€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>25€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
-                <label for="toggle-animation-2" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-2" class="toggle-animation" />
+                </div>
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
                         <h4>Velouté de légumes d'antan</h4>
                         <p>Carotte, panais, topinambour</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>35€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>35€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
-                <label for="toggle-animation-3" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-3" class="toggle-animation" />
+                </div>
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
-                        <h4>Soupe à l'oignon</h4>
-                        <p>Revisitée</p>
+                        <h4>Soupe à l'oignon </h4>
+                        <p> Revisitée</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>20€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>20€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
+                </div>
+                
                 <div class="menu-titre">
                     <h3>Plats</h3>
                 </div>
-
-                <label for="toggle-animation-4" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-4" class="toggle-animation" />
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
                         <h4>Coquilles Saint-Jacques</h4>
                         <p> Accompagnées d'une purée de panais</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>40€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>40€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
-                <label for="toggle-animation-5" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-5" class="toggle-animation" />
+                </div>
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
-                        <h4>Magret de canard</h4>
-                        <p>Et parmentier de pommes de terre</p>
+                        <h4>Magret de canard </h4>
+                        <p> Et parmentier de pommes de terre</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>35€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>35€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
-                <label for="toggle-animation-6" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-6" class="toggle-animation" />
+                </div>
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
                         <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <p> Sur son lit de gnocchis aux légumest riz sauvage aux zestes de citron</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>44€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>45€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
+                </div>
+
                 <div class="menu-titre">
                     <h3>Desserts</h3>
                 </div>
-
-                <label for="toggle-animation-7" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-7" class="toggle-animation" />
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
                         <h4>Pétales de violettes glacés</h4>
-                        <p> Et purée de noisettes</p>
+                        <p>Et purée de noisettes</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>18€</p>
-                    </div>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>18€</p>
+                        </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
                     </div>
-                </label>
-                <label for="toggle-animation-8" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-8" class="toggle-animation" />
-                    <div class="section-menu-contenu-txt__plat">
-                        <h4>Fondant au chocolat</h4>
-                        <p>Revisité</p>
-                    </div>
-
-                    <div class="div-principal">
-                        <p>22€</p>
-                    </div>
-
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
-                    </div>
-                </label>
-                <label for="toggle-animation-9" class="section-menu-contenu-txt">
-                    <input type="checkbox" id="toggle-animation-9" class="toggle-animation" />
+                </div>
+                <div class="section-menu-contenu-txt">
                     <div class="section-menu-contenu-txt__plat">
                         <h4>Millefeuille croustillant</h4>
-                        <p>Myrtilles et pâte d’amande</p>
+                        <p> Myrtilles et pâte d’amande</p>
                     </div>
 
-                    <div class="div-principal">
-                        <p>23€</p>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>22€</p>
+                        </div>
+
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-menu-contenu-txt">
+                    <div class="section-menu-contenu-txt__plat">
+                        <h4>Fondant au chocolat </h4>
+                        <p> Revisité</p>
                     </div>
 
-                    <div class="div-secondaire">
-                        <i class="fa-regular fa-circle-check"></i>
-                    </div>
-                </label>
+                    <div class="price-check">
+                        <div class="div-principal">
+                            <p>23€</p>
+                        </div>
 
+                        <div class="div-secondaire">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
                 <div class="btn-commander">
 
                     <button class="btn btn-menu">
-
-                        <span>
-                            Commander
-
-                        </span>
-
+                        Commander
                     </button>
                 </div>
             </div>

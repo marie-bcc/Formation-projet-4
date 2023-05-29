@@ -526,41 +526,6 @@ footer .espace {
 .section-menu .btn-commander .btn-menu span {
   font-size: 16px;
 }
-.section-menu .section-menu-contenu-txt {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(1) {
-  animation-delay: 0.5s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(2) {
-  animation-delay: 0.7s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(3) {
-  animation-delay: 0.9s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(4) {
-  animation-delay: 1.1s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(5) {
-  animation-delay: 1.3s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(6) {
-  animation-delay: 1.5s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(7) {
-  animation-delay: 1.7s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(8) {
-  animation-delay: 1.9s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(9) {
-  animation-delay: 2.1s;
-}
-.section-menu .section-menu-contenu-txt:nth-of-type(10) {
-  animation-delay: 2.3s;
-}
 .section-menu .heart-menu {
   position: absolute;
   top: 75%;
