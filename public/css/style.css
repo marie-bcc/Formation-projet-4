@@ -539,7 +539,8 @@ footer .espace {
 .section-explorer a {
   text-decoration: none;
 }
-.section-explorer .btn {
+
+.btn {
   height: 50px;
   width: 218px;
   border-radius: 25px;
@@ -552,12 +553,12 @@ footer .espace {
   align-items: center;
   justify-content: center;
 }
-.section-explorer .btn p {
+.btn p {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
-.section-explorer .btn:hover {
+.btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
