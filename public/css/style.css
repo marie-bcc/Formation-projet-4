@@ -528,9 +528,10 @@ footer .espace {
 }
 .section-menu .heart-menu {
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 90%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  margin-left: 5px;
 }
 .section-menu footer {
   position: relative;
@@ -574,9 +575,9 @@ footer .espace {
 .heart-label {
   position: absolute;
   top: 70%; /* ajuster comme nécessaire */
-  right: 5%; /* ajuster comme nécessaire */
-  width: 1.5rem;
-  height: 1.5rem;
+  right: 8%; /* ajuster comme nécessaire */
+  width: 1rem;
+  height: 1rem;
 }
 
 .fas, .far {
