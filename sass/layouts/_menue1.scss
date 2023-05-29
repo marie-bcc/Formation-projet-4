@@ -198,7 +198,35 @@
 
     
     
+    /* Effet d'apparition progressif */
+@keyframes apparition {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section-menu-contenu {
+    h3, h4, p {
+      opacity: 0; // On commence par rendre les éléments invisibles
+      animation: apparition 2s ease-out forwards; // On applique l'animation
+    }
     
+    h3 {
+      animation-delay: 0.5s;
+    }
+    h4 {
+      animation-delay: 1s;
+    }
+    p {
+      animation-delay: 1.5s;
+    }
+  }
+  
     
 
     

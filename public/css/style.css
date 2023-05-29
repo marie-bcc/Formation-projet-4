@@ -115,6 +115,11 @@ header a {
   }
 }
 
+.animation-loader {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out 3s forwards;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -383,6 +388,7 @@ footer .espace {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Effet d'apparition progressif */
 }
 .section-menu h2 {
   padding-top: 32px;
@@ -525,6 +531,29 @@ footer .espace {
 }
 .section-menu .btn-commander .btn-menu span {
   font-size: 16px;
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.section-menu .section-menu-contenu h3, .section-menu .section-menu-contenu h4, .section-menu .section-menu-contenu p {
+  opacity: 0;
+  animation: apparition 2s ease-out forwards;
+}
+.section-menu .section-menu-contenu h3 {
+  animation-delay: 0.5s;
+}
+.section-menu .section-menu-contenu h4 {
+  animation-delay: 1s;
+}
+.section-menu .section-menu-contenu p {
+  animation-delay: 1.5s;
 }
 .section-menu .heart-menu {
   position: absolute;
