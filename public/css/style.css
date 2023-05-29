@@ -468,19 +468,25 @@ footer .espace {
   font-weight: 300;
   font-size: 15px;
 }
+.section-menu .toggle-container {
+  position: relative;
+}
 .section-menu .toggle-animation {
   display: none;
 }
+.section-menu .section-menu-contenu-txt__plat {
+  /* Styles pour le contenu du plat */
+}
 .section-menu .div-principal {
+  /* Styles pour la div principale */
   position: relative;
   height: 69px;
   padding: 10px;
-  font-weight: bold;
+  transition: margin-right 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: margin-right 0.3s ease-in-out;
 }
 .section-menu .div-principal p {
   margin: 0;
@@ -489,15 +495,16 @@ footer .espace {
   font-size: 15px;
 }
 .section-menu .toggle-animation:checked ~ .div-principal {
-  margin-right: 59px;
+  margin-right: 59px; /* Remplacez la valeur par celle de $largeur-div-secondaire */
 }
 .section-menu .div-secondaire {
+  /* Styles pour la div secondaire */
   position: absolute;
   right: 0;
   top: 0;
   width: 59px;
   height: 69px;
-  background-color: #99E2D0;
+  background-color: #99E2D0; /* Remplacez la valeur par celle de $color-nouveau */
   transform: translateX(80px);
   transition: transform 0.3s ease-in-out;
   pointer-events: none;
@@ -565,7 +572,10 @@ footer .espace {
   position: relative;
 }
 
-.btn {
+.section-explorer a {
+  text-decoration: none;
+}
+.section-explorer .btn {
   height: 50px;
   width: 218px;
   border-radius: 25px;
@@ -574,13 +584,16 @@ footer .espace {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btn p {
+.section-explorer .btn p {
   font-weight: 500;
-  line-height: 19px;
   font-size: 16px;
+  line-height: 19px;
 }
-.btn:hover {
+.section-explorer .btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
@@ -590,10 +603,8 @@ footer .espace {
 
 .fas, .far {
   font-size: 1.5rem;
-  left: 14rem;
-  bottom: 5rem;
   transform: translateY(-50%);
-  position: relative;
+  position: absolute;
   transition: opacity 0.3s ease-in-out;
 }
 

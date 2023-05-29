@@ -125,55 +125,63 @@
         }
     }
 
-    .toggle-animation {
+    .toggle-container {
+        position: relative;
+      }
+      
+      .toggle-animation {
         display: none;
-    }
-
-
-
-    .div-principal {
+      }
+      
+      .section-menu-contenu-txt__plat {
+        /* Styles pour le contenu du plat */
+      }
+      
+      .div-principal {
+        /* Styles pour la div principale */
         position: relative;
         height: 69px;
         padding: 10px;
-        font-weight: bold;
+        transition: margin-right 0.3s ease-in-out;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        transition: margin-right $duree-animation ease-in-out;
-
-        p {
-            margin: 0;
-            font-weight: 700;
-            margin-right: 10px;
-            font-size: 15px;
-        }
-    }
-
-    .toggle-animation:checked~.div-principal {
-        margin-right: $largeur-div-secondaire;
-    }
-
-    .div-secondaire {
+      }
+      
+      .div-principal p {
+        margin: 0;
+        font-weight: 700;
+        margin-right: 10px;
+        font-size: 15px;
+      }
+      
+      .toggle-animation:checked ~ .div-principal {
+        margin-right: $largeur-div-secondaire; /* Remplacez la valeur par celle de $largeur-div-secondaire */
+      }
+      
+      .div-secondaire {
+        /* Styles pour la div secondaire */
         position: absolute;
         right: 0;
         top: 0;
         width: 59px;
         height: 69px;
-        background-color: $color-nouveau;
+        background-color: $color-nouveau; /* Remplacez la valeur par celle de $color-nouveau */
         transform: translateX(80px);
-        transition: transform $duree-animation ease-in-out;
+        transition: transform 0.3s ease-in-out;
         pointer-events: none;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #ffffff;
         font-size: 1.5em;
-    }
-
-    .toggle-animation:checked~.div-secondaire {
+      }
+      
+      .toggle-animation:checked ~ .div-secondaire {
         transform: translateX(0);
-    }
+      }
+      
 
     .btn-commander {
         width: 100%;
@@ -193,14 +201,14 @@
         }
     }
 
-
+    
     .section-menu-contenu-txt {
         animation-name: fadeIn;
         animation-duration: 2s;
         animation-fill-mode: both;
     }
 
-
+    
     .section-menu-contenu-txt:nth-of-type(1) {
         animation-delay: 0.5s;
     }
@@ -212,34 +220,32 @@
     .section-menu-contenu-txt:nth-of-type(3) {
         animation-delay: 0.9s;
     }
-
     .section-menu-contenu-txt:nth-of-type(4) {
         animation-delay: 1.1s;
     }
-
     .section-menu-contenu-txt:nth-of-type(5) {
         animation-delay: 1.3s;
     }
-
     .section-menu-contenu-txt:nth-of-type(6) {
         animation-delay: 1.5s;
     }
-
     .section-menu-contenu-txt:nth-of-type(7) {
         animation-delay: 1.7s;
     }
-
     .section-menu-contenu-txt:nth-of-type(8) {
         animation-delay: 1.9s;
     }
-
     .section-menu-contenu-txt:nth-of-type(9) {
         animation-delay: 2.1s;
     }
 
+    
 
-
-
+    // .heart-menu{
+    //     position: absolute;
+    //     top: 63%;
+    //     left: 25em;
+    // }
 
     .icone-menu {
         position: absolute;
