@@ -153,17 +153,16 @@
     }
     
     .price-check:hover .div-principal {
-        margin-right: $largeur-div-secondaire; /* Remplacez la valeur par celle de $largeur-div-secondaire */
+        margin-right: $largeur-div-secondaire; 
     }
     
     .div-secondaire {
-        /* Styles pour la div secondaire */
         position: absolute;
         right: 0;
         top: 0;
         width: 59px;
         height: 69px;
-        background-color: $color-nouveau; /* Remplacez la valeur par celle de $color-nouveau */
+        background-color: $color-nouveau; 
         transform: translateX(80px);
         transition: transform 0.3s ease-in-out;
         pointer-events: none;
@@ -212,8 +211,8 @@
   
   .section-menu-contenu {
     h3, h4, p {
-      opacity: 0; // On commence par rendre les éléments invisibles
-      animation: apparition 2s ease-out forwards; // On applique l'animation
+      opacity: 0; 
+      animation: apparition 2s ease-out forwards; 
     }
     
     h3 {
