@@ -6,7 +6,7 @@
     
  
 }
-
+ 
 .btn {
 
     height: 50px;
@@ -86,7 +86,15 @@
 .favoris-checkbox:checked ~ .far {
     opacity: 0;
 }
+ 
 
+.fa-mobile-screen-button, .fa-list-ul{
+    color: #7e7e7e
+}
+
+.fa-store{
+    color: #9356dc
+}
 
 
 

@@ -474,26 +474,25 @@ footer .espace {
 }
 .section-menu .section-menu-contenu-txt__plat p {
   padding-bottom: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin: 0px;
   font-weight: 300;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .section-menu .price-check {
   position: relative;
   display: flex;
 }
 .section-menu .div-principal {
-  /* Styles pour la div principale */
   height: 69px;
   padding: 10px;
-  transition: margin-right 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: margin-right 0.3s ease-in-out;
 }
 .section-menu .div-principal p {
   margin: 0;
@@ -511,14 +510,14 @@ footer .espace {
   width: 59px;
   height: 69px;
   background-color: #99E2D0;
-  transform: translateX(80px);
-  transition: transform 0.3s ease-in-out;
   pointer-events: none;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
   font-size: 1.5em;
+  transform: translateX(80px);
+  transition: transform 0.3s ease-in-out;
 }
 .section-menu .price-check:hover .div-secondaire {
   transform: translateX(0);
@@ -636,6 +635,14 @@ footer .espace {
 
 .favoris-checkbox:checked ~ .far {
   opacity: 0;
+}
+
+.fa-mobile-screen-button, .fa-list-ul {
+  color: #7e7e7e;
+}
+
+.fa-store {
+  color: #9356dc;
 }
 
 .restaurant-item {

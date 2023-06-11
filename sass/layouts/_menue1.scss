@@ -117,12 +117,13 @@
 
         p {
             padding-bottom: 12px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             margin: 0px;
             font-weight: 300;
             font-size: 15px;
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
         }
     }
@@ -135,14 +136,13 @@
     }
     
     .div-principal {
-        /* Styles pour la div principale */
         height: 69px;
         padding: 10px;
-        transition: margin-right 0.3s ease-in-out;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
+        transition: margin-right 0.3s ease-in-out;
     }
     
     .div-principal p {
@@ -163,14 +163,15 @@
         width: 59px;
         height: 69px;
         background-color: $color-nouveau; 
-        transform: translateX(80px);
-        transition: transform 0.3s ease-in-out;
         pointer-events: none;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #ffffff;
         font-size: 1.5em;
+
+        transform: translateX(80px);
+        transition: transform 0.3s ease-in-out;
     }
     
     .price-check:hover .div-secondaire {

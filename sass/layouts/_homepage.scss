@@ -7,25 +7,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgb(255, 255, 255);
+    
     animation: fadeOut 0.5s ease-in-out 3s forwards;
 
 }
 
-
-
 .loader {
-
     .cup {
         position: relative;
         width: 120px;
         height: 100px;
-
         .cup-body {
             position: absolute;
             width: 100%;
@@ -35,7 +33,6 @@
             box-shadow: inset 0 0 0 10px $color-icones;
             overflow: hidden;
         }
-
         .cup-handle {
             position: absolute;
             top: 30%;
@@ -60,31 +57,26 @@
         background-color: #9256dce5;
         border-radius: 0% 0% 45% 51% / 29% 47% 53% 44%;
         animation: liquid-animation 2s ease-in-out infinite;
-
         h2 {
             font-size: 15px;
             font-family: $font-titre;
             color: #FFFFFF;
             text-align: center;
             margin: 0;
-
         }
     }
-
     @keyframes liquid-animation {
-
         0%,
         100% {
             transform: translateX(0) rotate(0);
         }
-
         50% {
             transform: translateX(-2px) rotate(1deg);
         }
     }
 }
 
-
+ 
 .animation-loader {
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out 3s forwards;
