@@ -476,10 +476,15 @@ footer .espace {
   padding-bottom: 12px;
   margin: 0px;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 11px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 400px) {
+  .section-menu .section-menu-contenu-txt__plat p {
+    font-size: 14px;
+  }
 }
 .section-menu .price-check {
   position: relative;
